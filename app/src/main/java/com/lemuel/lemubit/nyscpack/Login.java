@@ -17,14 +17,60 @@ package com.lemuel.lemubit.nyscpack;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
+import com.lemuel.lemubit.nyscpack.Realm.RealmModel;
+
+import java.util.ArrayList;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import io.realm.Realm;
+import io.realm.RealmResults;
+
 public class Login extends AppCompatActivity {
+    @BindView(R.id.autoLoginEmailTxt)
+    AutoCompleteTextView EmailTxt;
+    @BindView(R.id.LoginPassTxt)
+    EditText passwordTxt;
+    @BindView(R.id.LoginBtn)
+    Button LoginBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        ButterKnife.bind(this);
+        // Initialize Realm
+        Realm.init(this);
+        // Get a Realm instance for this thread
+        Realm realm = Realm.getDefaultInstance();
+        RealmResults<RealmModel> results = realm.where(RealmModel.class).distinctValues("email").findAll();
+        String[] resultArray = new String[results.size()];
+        int increment = 0;
+        for (RealmModel s : results) {
+            resultArray[increment] = s.getEmail();
+            increment++;
+        }
+        //Get Emails from Realm into auto-correct text
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line, resultArray);
+        EmailTxt.setAdapter(adapter);
+
+        LoginBtn.setOnClickListener(v -> {
+
+            //Save email
+            realm.beginTransaction();
+            RealmModel user = realm.createObject(RealmModel.class);
+            user.setEmail(EmailTxt.getText().toString());
+            realm.commitTransaction();
+        });
 
     }
 }
