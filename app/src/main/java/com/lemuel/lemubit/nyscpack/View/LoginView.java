@@ -13,19 +13,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
 
-package com.lemuel.lemubit.nyscpack.Realm;
+package com.lemuel.lemubit.nyscpack.View;
 
-import io.realm.RealmObject;
+import android.widget.ArrayAdapter;
 
 
-public class RealmModel extends RealmObject{
-    private String email;
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
+public interface LoginView {
+    void onSetAutoCompleterText(ArrayAdapter<String> adapter);
 }

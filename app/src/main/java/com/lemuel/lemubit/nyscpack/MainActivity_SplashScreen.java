@@ -15,7 +15,7 @@ limitations under the License.*/
 
 package com.lemuel.lemubit.nyscpack;
 
-import android.content.Intent;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
