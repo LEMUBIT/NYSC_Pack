@@ -3,4 +3,12 @@
     <string name="splash">Splash</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
+    <string name="user_name">User Name</string>
+    <string name="state_of_deployment">State of Deployment</string>
+    <string name="are_you_registered_register_here">Are you registered? Register here</string>
+
+    <string-array name="Stream_option">
+        <item>Stream One</item>
+        <item>Stream Two</item>
+    </string-array>
 </resources>
