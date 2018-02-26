@@ -6,6 +6,8 @@
     <string name="user_name">User Name</string>
     <string name="state_of_deployment">State of Deployment</string>
     <string name="are_you_registered_register_here">Are you registered? Register here</string>
+    <string name="type_password_again">Type Password Again</string>
+    <string name="register">REGISTER</string>
 
     <string-array name="Stream_option">
         <item>Stream One</item>
