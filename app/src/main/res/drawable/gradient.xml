@@ -19,9 +19,9 @@ limitations under the License.
 
     <gradient
         android:angle="90"
-        android:centerColor="#029307"
-        android:endColor="#4CAF50"
-        android:startColor="#011e02"
+        android:centerColor="#d1e9d1"
+        android:endColor="#a6bfa7"
+        android:startColor="#5f6c5f"
         android:type="linear" />
 
 </shape>
