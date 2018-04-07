@@ -15,6 +15,7 @@ limitations under the License.*/
 
 package com.lemuel.lemubit.nyscpack;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -28,7 +29,7 @@ import com.lemuel.lemubit.nyscpack.View.LoginView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import static com.lemuel.lemubit.nyscpack.Util.Open.*;
+
 public class Login extends AppCompatActivity implements LoginView {
     @BindView(R.id.autoLoginEmailTxt)
     AutoCompleteTextView EmailTxt;
@@ -48,7 +49,7 @@ public class Login extends AppCompatActivity implements LoginView {
         loginPresenter = new LoginPresenterImpl(this, this);
         loginPresenter.getSavedEmails(this);
         LoginBtn.setOnClickListener(v -> loginPresenter.saveEmail(EmailTxt.getText().toString()));
-        RegBtnTxt.setOnClickListener(v -> OpenActivity(Login.this,Register.class,null));
+        RegBtnTxt.setOnClickListener(v -> startActivity(new Intent(Login.this,Register.class)));
     }
 
     @Override

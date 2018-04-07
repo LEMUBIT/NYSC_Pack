@@ -16,10 +16,9 @@ limitations under the License.*/
 package com.lemuel.lemubit.nyscpack;
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-import static com.lemuel.lemubit.nyscpack.Util.Open.*;
 
 public class MainActivity_SplashScreen extends AppCompatActivity {
 
@@ -27,7 +26,6 @@ public class MainActivity_SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        OpenActivity(MainActivity_SplashScreen.this,Login.class,null);
-
+        startActivity(new Intent(MainActivity_SplashScreen.this,Login.class));
     }
 }
