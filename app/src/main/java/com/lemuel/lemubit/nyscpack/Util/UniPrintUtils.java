@@ -15,18 +15,6 @@ limitations under the License.*/
 
 package com.lemuel.lemubit.nyscpack.Util;
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
+public class UniPrintUtils {
 
-//Class with methon 'OpenActivity which is to help reduce boilerplate code when opening new activity
-public class Open {
-    public static void OpenActivity(Context context, Class<?> cls, Bundle bundle) {
-
-        Intent intent = new Intent(context, cls);
-        if (bundle != null) {
-            intent.putExtras(bundle);
-        }
-        context.startActivity(intent);
-    }
 }
