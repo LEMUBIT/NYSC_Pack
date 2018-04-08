@@ -1,13 +1,20 @@
 <resources>
-    <string name="app_name">NYSC Digital Comrade</string>
+    <string name="app_name">NYSC Droid</string>
     <string name="splash">Splash</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="user_name">User Name</string>
     <string name="state_of_deployment">State of Deployment</string>
-    <string name="are_you_registered_register_here">Are you registered? Register here</string>
+    <string name="are_you_registered_register_here">sign up</string>
     <string name="type_password_again">Type Password Again</string>
     <string name="register">REGISTER</string>
+
+    <string name="twitter_consumer_key" translatable="false">pLY8G5VJKzINjJKb2SRcqCtHo</string>
+    <string name="twitter_consumer_secret" translatable="false">F47v1Lesk1TFEYBxymAfRRiQWUj5VJThVlPivAdENjY81edvSC
+</string>
+    <string name="facebook_app_id">440009699782673</string>
+    <string name="fb_login_protocol_scheme">fb440009699782673</string>
+
 
     <string-array name="Stream_option">
         <item>Stream One</item>

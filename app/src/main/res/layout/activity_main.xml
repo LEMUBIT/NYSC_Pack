@@ -6,6 +6,6 @@
     android:layout_height="match_parent"
     android:theme="@style/SplashTheme"
     android:background="#fff"
-    tools:context="com.lemuel.lemubit.nyscpack.MainActivity_SplashScreen">
+    tools:context="com.lemuel.lemubit.nyscpack.MainActivity">
 
 </android.support.constraint.ConstraintLayout>
