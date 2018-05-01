@@ -44,7 +44,7 @@ import butterknife.ButterKnife;
 
 //currently using debug SHA1 for Google sign in
 //facebook dev login status, still in "development", can change to live when done
-public class Login extends AppCompatActivity  {
+public class Login extends AppCompatActivity {
     private static final int RC_SIGN_IN = 123;
 
     @Override
@@ -59,7 +59,7 @@ public class Login extends AppCompatActivity  {
                 new AuthUI.IdpConfig.Builder(AuthUI.TWITTER_PROVIDER).build());
 
         if (FirebaseAuth.getInstance().getCurrentUser() == null) {
-        // Create and launch sign-in intent
+            // Create and launch sign-in intent
             startActivityForResult(
                     AuthUI.getInstance()
                             .createSignInIntentBuilder()
@@ -67,6 +67,8 @@ public class Login extends AppCompatActivity  {
                             .setAvailableProviders(providers)
                             .build(),
                     RC_SIGN_IN);
+        } else {
+            startActivity(new Intent(this, MainActivity.class));
         }
     }
 
@@ -81,7 +83,7 @@ public class Login extends AppCompatActivity  {
                 // Successfully signed in
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 Toast.makeText(this, "Success:" + user.getEmail() + "$$" + user.getDisplayName(), Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Login.this,MainActivity.class));
+                startActivity(new Intent(Login.this, MainActivity.class));
                 // ...
             } else {
                 // Sign in failed, check response for error code

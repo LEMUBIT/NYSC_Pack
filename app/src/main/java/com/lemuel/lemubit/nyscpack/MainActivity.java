@@ -19,12 +19,32 @@ package com.lemuel.lemubit.nyscpack;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 
-public class MainActivity extends AppCompatActivity {
+import com.lemuel.lemubit.nyscpack.Model.HomeMenuItems;
+import com.lemuel.lemubit.nyscpack.Presenter.MainActivityPresenter;
+import com.lemuel.lemubit.nyscpack.View.MainActivityView;
+
+import java.util.List;
+
+import butterknife.BindView;
+
+public class MainActivity extends AppCompatActivity implements MainActivityView{
+    //todo this main activity will have necessary features using lottie files
+    //todo design home and questions activity.
+    @BindView(R.id.mainMenuRcyView)
+    RecyclerView mainMenuRcyV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        MainActivityPresenter mainActivityPresenter=new MainActivityPresenter(this, this);
+        mainActivityPresenter.setMenuRecyclerAdapter();
+    }
+
+    @Override
+    public void onSetRecyclerAdapter(List<HomeMenuItems> homeMenuItemsArrayList) {
+    // mainMenuRcyV.setAdapter();
     }
 }

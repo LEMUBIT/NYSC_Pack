@@ -11,7 +11,7 @@
 
     <string name="twitter_consumer_key" translatable="false">pLY8G5VJKzINjJKb2SRcqCtHo</string>
     <string name="twitter_consumer_secret" translatable="false">F47v1Lesk1TFEYBxymAfRRiQWUj5VJThVlPivAdENjY81edvSC
-</string>
+    </string>
     <string name="facebook_app_id">440009699782673</string>
     <string name="fb_login_protocol_scheme">fb440009699782673</string>
 
@@ -19,5 +19,21 @@
     <string-array name="Stream_option">
         <item>Stream One</item>
         <item>Stream Two</item>
+    </string-array>
+
+    <string-array name="home_menu_items_description">
+        <item>Share Stories</item>
+        <item>Ask Questions</item>
+        <item>Search for people</item>
+        <item>Watch videos</item>
+        <item>Save Stories</item>
+    </string-array>
+
+    <string-array name="home_menu_items_lottie">
+        <item>test text</item>
+        <item>test text</item>
+        <item>test text</item>
+        <item>test text</item>
+        <item>test text</item>
     </string-array>
 </resources>
