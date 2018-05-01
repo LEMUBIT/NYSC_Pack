@@ -22,18 +22,20 @@
     </string-array>
 
     <string-array name="home_menu_items_description">
-        <item>Share Stories</item>
+        <item>Shared Stories</item>
         <item>Ask Questions</item>
         <item>Search for people</item>
-        <item>Watch videos</item>
-        <item>Save Stories</item>
+        <item>NYSC videos</item>
+        <item>Saved Stories</item>
+        <item>Locate Camps</item>
     </string-array>
 
     <string-array name="home_menu_items_lottie">
-        <item>test text</item>
-        <item>test text</item>
-        <item>test text</item>
-        <item>test text</item>
-        <item>test text</item>
+        <item>shareStories.json</item>
+        <item>askQuestions.json</item>
+        <item>search.json</item>
+        <item>watchVideos.json</item>
+        <item>savedStories.json</item>
+        <item>location.json</item>
     </string-array>
 </resources>

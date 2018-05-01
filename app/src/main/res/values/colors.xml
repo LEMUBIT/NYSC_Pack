@@ -8,7 +8,7 @@
     <color name="dividerColor">#BDBDBD</color>
     <color name="text">#FFFFFF</color>
     <color name="lightPrimary">#C8E6C9</color>
-
+    <color name="snow">#FBFBFB</color>
     <color name="background">#abdff1</color>
     <color name="nyscGreen">#00C853</color>
     <color name="accent">#ff8000</color>
