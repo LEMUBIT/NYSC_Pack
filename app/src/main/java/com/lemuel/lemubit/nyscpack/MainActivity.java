@@ -15,6 +15,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+//todo add activities to Views in the MVP, they are actually the views
 public class MainActivity extends AppCompatActivity implements MainActivityView {
     //todo this main activity will have necessary features using lottie files
     //todo design home and questions activity.
