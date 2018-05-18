@@ -28,6 +28,7 @@ public class MainActivityPresenter {
         menuLottieFilRefs = Arrays.asList(context.getResources().getStringArray(R.array.home_menu_items_lottie));
         menuDescriptions = Arrays.asList(context.getResources().getStringArray(R.array.home_menu_items_description));
 
+        //todo use Dimens resource for number of menu items
         /* There are only 6 menu items (0-5) */
         for (int i = 0; i <= 5; i++) {
             homeMenuItemsList.add(i, new HomeMenuItems(menuLottieFilRefs.get(i), menuDescriptions.get(i)));
