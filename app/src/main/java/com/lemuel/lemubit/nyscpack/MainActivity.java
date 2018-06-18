@@ -1,24 +1,25 @@
 package com.lemuel.lemubit.nyscpack;
 
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 
-import com.lemuel.lemubit.nyscpack.Model.HomeMenuItems;
-import com.lemuel.lemubit.nyscpack.Presenter.MainActivityPresenter;
-import com.lemuel.lemubit.nyscpack.View.MainActivityView;
-
-import java.util.List;
+import com.lemuel.lemubit.nyscpack.presenter.MainActivityPresenter;
+import com.lemuel.lemubit.nyscpack.view.MainActivityView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * @author lemuel
+ */
 //todo add activities to Views in the MVP, they are actually the views
+
 public class MainActivity extends AppCompatActivity implements MainActivityView {
     //todo this main activity will have necessary features using lottie files
     //todo design home and questions activity.
+
     @BindView(R.id.mainMenuRcyView)
     RecyclerView mainMenuRecyclerV;
 

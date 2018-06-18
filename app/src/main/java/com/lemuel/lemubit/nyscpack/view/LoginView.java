@@ -1,4 +1,4 @@
-package com.lemuel.lemubit.nyscpack.View;
+package com.lemuel.lemubit.nyscpack.view;
 
 import android.widget.ArrayAdapter;
 

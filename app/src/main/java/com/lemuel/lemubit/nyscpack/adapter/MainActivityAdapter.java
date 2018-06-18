@@ -1,4 +1,4 @@
-package com.lemuel.lemubit.nyscpack.Adapter;
+package com.lemuel.lemubit.nyscpack.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,14 +8,15 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.lemuel.lemubit.nyscpack.Model.HomeMenuItems;
 import com.lemuel.lemubit.nyscpack.R;
-import com.lemuel.lemubit.nyscpack.View.MainActivityView;
+import com.lemuel.lemubit.nyscpack.model.HomeMenuItems;
+import com.lemuel.lemubit.nyscpack.view.MainActivityView;
 
 import java.util.List;
 
-import butterknife.BindView;
-
+/**
+ * @author lemuel
+ */
 public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapter.ViewHolder> {
     Context context;
     MainActivityView mainActivityView;
@@ -49,12 +50,13 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
     public class ViewHolder extends RecyclerView.ViewHolder {
         public LottieAnimationView menuLottieAnimationView;
         public TextView menuDescription;
-public View view;
+        public View view;
+
         public ViewHolder(View itemView) {
             super(itemView);
             menuLottieAnimationView = itemView.findViewById(R.id.menu_animation_view);
             menuDescription = itemView.findViewById(R.id.menuDescriptionTxt);
-view=itemView.findViewById(R.id.description_divider_view);
+            view = itemView.findViewById(R.id.description_divider_view);
 
         }
     }

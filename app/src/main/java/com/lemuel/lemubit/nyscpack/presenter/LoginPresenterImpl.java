@@ -1,10 +1,10 @@
-package com.lemuel.lemubit.nyscpack.Presenter;
+package com.lemuel.lemubit.nyscpack.presenter;
 
 import android.content.Context;
 import android.widget.ArrayAdapter;
 
-import com.lemuel.lemubit.nyscpack.View.LoginView;
-import com.lemuel.lemubit.nyscpack.Realm.RealmModel;
+import com.lemuel.lemubit.nyscpack.view.LoginView;
+import com.lemuel.lemubit.nyscpack.realm.RealmModel;
 import io.realm.Realm;
 
 

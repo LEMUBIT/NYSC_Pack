@@ -1,4 +1,4 @@
-package com.lemuel.lemubit.nyscpack.Realm;
+package com.lemuel.lemubit.nyscpack.realm;
 
 import android.content.Context;
 

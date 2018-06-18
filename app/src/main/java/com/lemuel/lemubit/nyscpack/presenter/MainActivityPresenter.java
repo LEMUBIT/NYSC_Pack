@@ -1,12 +1,12 @@
-package com.lemuel.lemubit.nyscpack.Presenter;
+package com.lemuel.lemubit.nyscpack.presenter;
 
 import android.content.Context;
 import android.support.v7.widget.GridLayoutManager;
 
-import com.lemuel.lemubit.nyscpack.Adapter.MainActivityAdapter;
-import com.lemuel.lemubit.nyscpack.Model.HomeMenuItems;
+import com.lemuel.lemubit.nyscpack.adapter.MainActivityAdapter;
+import com.lemuel.lemubit.nyscpack.model.HomeMenuItems;
 import com.lemuel.lemubit.nyscpack.R;
-import com.lemuel.lemubit.nyscpack.View.MainActivityView;
+import com.lemuel.lemubit.nyscpack.view.MainActivityView;
 
 import java.util.ArrayList;
 import java.util.Arrays;

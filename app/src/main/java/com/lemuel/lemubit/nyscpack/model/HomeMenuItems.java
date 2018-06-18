@@ -1,5 +1,9 @@
-package com.lemuel.lemubit.nyscpack.Model;
+package com.lemuel.lemubit.nyscpack.model;
 
+/**
+ *
+ * @author lemuel
+ */
 public class HomeMenuItems {
     private String lottieAnimation;
     private String description;
