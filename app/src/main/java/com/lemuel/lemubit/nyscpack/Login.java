@@ -15,6 +15,10 @@ import java.util.List;
 
 //currently using debug SHA1 for Google sign in
 //facebook dev login status, still in "development", can change to live when done
+
+/**
+ * @author lemuel
+ */
 public class Login extends AppCompatActivity {
     private static final int RC_SIGN_IN = 123;
 
