@@ -12,6 +12,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * @author lemuel
+ */
 public class MainActivityPresenter {
     private List<String> menuLottieFilRefs = new ArrayList<>();
     private List<String> menuDescriptions = new ArrayList<>();
@@ -30,7 +33,8 @@ public class MainActivityPresenter {
 
         //todo use Dimens resource for number of menu items
         /* There are only 6 menu items (0-5) */
-        for (int i = 0; i <= 5; i++) {
+        int menuItems=5;
+        for (int i = 0; i <= menuItems; i++) {
             homeMenuItemsList.add(i, new HomeMenuItems(menuLottieFilRefs.get(i), menuDescriptions.get(i)));
         }
         mainActivityView.onSetRecyclerAdapter(new MainActivityAdapter(context, mainActivityView, homeMenuItemsList));
